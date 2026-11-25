@@ -18,12 +18,40 @@
   a { color: var(--enlace); }
   hr { border: 0; border-top: 1px solid var(--linea); margin: 48px 0; }
   ul { padding-left: 22px; }
+  .cabecera { border-bottom: 1px solid var(--linea); }
+  .cab-dentro { max-width: 760px; margin: 0 auto; padding: 14px 16px; display: flex; flex-wrap: wrap;
+                gap: 8px 16px; justify-content: space-between; align-items: center; }
+  .app { font-weight: 700; }
+  .inicio { padding-bottom: 40px; margin-bottom: 40px; border-bottom: 1px solid var(--linea); }
+  .titulo-app { font-size: 2.2rem; }
+  .yt { display: flex; align-items: center; gap: 12px; }
+  .yt svg { flex: none; }
+  .boton { display: inline-block; padding: 10px 18px; border: 1px solid var(--enlace); border-radius: 8px;
+           text-decoration: none; font-weight: 600; }
 </style>
 </head>
 <body>
+<header class="cabecera">
+  <div class="cab-dentro">
+    <span class="app">Shorts-para-docs</span>
+    <nav><a href="#privacy-policy">Privacy Policy</a> · <a href="#politica-privacidad">Política de privacidad</a></nav>
+  </div>
+</header>
 <main>
 
-<h1>Privacy Policy – Shorts-para-docs</h1>
+<section class="inicio">
+  <h1 class="titulo-app">Shorts-para-docs</h1>
+  <p>A private tool that uploads short vertical clips of my own documentaries to my own YouTube channel,
+  <a href="https://www.youtube.com/channel/UCDdHUg44hnkAxreLfoaSANw">ClipsDocumentales</a>.
+  Used only by the channel owner.</p>
+  <p class="yt">
+    <svg width="40" height="28" viewBox="0 0 40 28" aria-label="YouTube" role="img"><rect width="40" height="28" rx="7" fill="#FF0000"/><path d="M16 8 L27 14 L16 20 Z" fill="#fff"/></svg>
+    <span>Uses <strong>YouTube API Services</strong> (YouTube Data API v3)</span>
+  </p>
+  <p><a class="boton" href="#privacy-policy">Read the Privacy Policy</a></p>
+</section>
+
+<h1 id="privacy-policy">Privacy Policy – Shorts-para-docs</h1>
 <p class="fecha">Last updated: 25 November 2026</p>
 
 <p><strong>Shorts-para-docs</strong> is a private, single-user tool developed and used only by its owner,
@@ -76,7 +104,7 @@ including the Limited Use requirements.</p>
 
 <hr>
 
-<h1>Política de privacidad – Shorts-para-docs</h1>
+<h1 id="politica-privacidad">Política de privacidad – Shorts-para-docs</h1>
 <p class="fecha">Última actualización: 25 de noviembre de 2026</p>
 
 <p><strong>Shorts-para-docs</strong> es una herramienta privada de un solo usuario, creada y usada únicamente por
